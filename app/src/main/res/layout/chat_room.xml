@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#9062b754"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/send_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#fff"
+            android:textSize="@dimen/fontsize_18"
+            android:padding="@dimen/space_5"
+            android:id="@+id/user_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:background="#1e6258"
+        android:textColor="#fff"
+        android:textSize="@dimen/fontsize_15"
+        android:layout_height="wrap_content"
+        android:text="send"/>
+
+    <EditText
+        android:id="@+id/send_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/send"
+        android:layout_toStartOf="@+id/send"
+        android:layout_toEndOf="@+id/emoji_btn"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/emoji_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        />
+
+</RelativeLayout>
